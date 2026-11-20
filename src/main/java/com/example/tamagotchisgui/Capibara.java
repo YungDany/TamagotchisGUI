@@ -71,6 +71,8 @@ private int nivelChill;
 
     }
 
+    //
+
     @Override
     public String accion1() {
         return (nombre+"Esta viendo el paisaje(Nivel: "+nivelChill+").");
