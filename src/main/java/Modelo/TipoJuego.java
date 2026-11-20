@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 public enum TipoJuego {
     PERSEGUIR_PELOTA("Perseguir la pelota",25,20),

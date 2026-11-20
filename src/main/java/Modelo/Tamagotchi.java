@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 public abstract class Tamagotchi implements TamagotchiActions{
 

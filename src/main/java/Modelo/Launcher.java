@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 import javafx.application.Application;
 

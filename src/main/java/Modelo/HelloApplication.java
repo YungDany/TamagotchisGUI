@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,3 +17,4 @@ public class HelloApplication extends Application {
         stage.show();
     }
 }
+//

@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 public enum EstadoAnimo {
     EXCELENTE("Está excelente y con mucha vida."),

@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 public class Cuyo extends Tamagotchi{
 private int nivelMiedo;

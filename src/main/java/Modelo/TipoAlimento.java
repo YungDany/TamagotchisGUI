@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 public enum TipoAlimento {
     CROQUETAS("Croquetas",30,15),

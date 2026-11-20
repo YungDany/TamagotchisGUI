@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 public class Gato extends Tamagotchi{
     private  boolean ronroneando;

@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 public class Capibara extends Tamagotchi{
 private int nivelChill;

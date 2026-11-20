@@ -5,4 +5,6 @@ module com.example.tamagotchisgui {
 
     opens com.example.tamagotchisgui to javafx.fxml;
     exports com.example.tamagotchisgui;
+    exports Modelo;
+    opens Modelo to javafx.fxml;
 }

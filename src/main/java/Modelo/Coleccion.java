@@ -1,4 +1,4 @@
-package com.example.tamagotchisgui;
+package Modelo;
 
 import java.util.ArrayList;
 import java.util.Comparator;
