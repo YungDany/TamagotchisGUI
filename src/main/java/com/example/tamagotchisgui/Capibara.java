@@ -70,7 +70,7 @@ private int nivelChill;
         System.out.println(nombre +"jugo" +juego.getNombre());
 
     }
-    
+
 
     @Override
     public String accion1() {
