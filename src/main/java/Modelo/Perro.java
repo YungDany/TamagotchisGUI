@@ -64,19 +64,23 @@ public class Perro extends Tamagotchi{
 
         @Override
         public String accion1() {
+            setNivelAgresividad(nivelAgresividad + 10);
             return nombre + " Ansioso de que regresaras(Nivel: " + nivelAgresividad + ").";
         }
     @Override
     public String accion2() {
-        return nombre + " Esta persiguiendo su cola (Nivel: " + nivelImperactividad + ").";
+        setNivelImperactividad(nivelImperactividad + 5);
+            return nombre + " Esta persiguiendo su cola (Nivel: " + nivelImperactividad + ").";
     }
         @Override
         public String accion3(){
+            setNivelAgresividad(nivelAgresividad + 5);
             return nombre + " Guau guau (Nivel: " + nivelAgresividad + ").";
         }
         @Override
 
         public String accion4(){
+            setNivelAgresividad(nivelAgresividad + 8);
             return nombre+" Esta escarbando la tierra (Nivel: " + nivelImperactividad + ").";
 
         }
@@ -105,7 +109,7 @@ public class Perro extends Tamagotchi{
         }
 
         public int getNivelAgresividad() {
-            return nivelAgresividad;
+            return (nivelAgresividad);
         }
 
         public void setNivelAgresividad(int nivelAgresividad) {

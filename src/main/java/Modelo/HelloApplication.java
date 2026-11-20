@@ -1,5 +1,5 @@
-package Modelo;
-import Vista.VistaGUI;
+package Modelo; // Cámbialo a package Vista; si el archivo está en Vista
+import  Vista.VistaGUI;
 import Controlador.ControladorGUI;
 import Modelo.Tamagotchi;
 import Modelo.TipoAlimento;
@@ -28,7 +28,6 @@ public class HelloApplication extends Application {
     }
 
     private void configurarEventos() {
-        // Cambiar de mascota al seleccionar otra en el ComboBox
         vista.comboMascotas.setOnAction(e -> {
             String etiqueta = vista.comboMascotas.getValue();
             if (etiqueta != null) {
@@ -37,7 +36,6 @@ public class HelloApplication extends Application {
             }
         });
 
-        // Adoptar nueva mascota
         vista.btnAdoptar.setOnAction(e -> {
             TextInputDialog dialogNombre = new TextInputDialog("Max");
             dialogNombre.setTitle("Adoptar Mascota");
@@ -67,7 +65,6 @@ public class HelloApplication extends Application {
             vista.lblMensaje.setText(mensaje);
         });
 
-        // Alimentar
         vista.btnAlimentar.setOnAction(e -> {
             if (mascotaActual == null) {
                 vista.lblMensaje.setText("Primero adopta o selecciona una mascota.");
@@ -87,7 +84,6 @@ public class HelloApplication extends Application {
             }
         });
 
-        // Jugar
         vista.btnJugar.setOnAction(e -> {
             if (mascotaActual == null) {
                 vista.lblMensaje.setText("Primero adopta o selecciona una mascota.");
@@ -107,13 +103,11 @@ public class HelloApplication extends Application {
             }
         });
 
-        // Dormir
         vista.btnDormir.setOnAction(e -> {
             List<String> msgs = controlador.dormir(mascotaActual);
             actualizarPantalla(msgs);
         });
 
-        // Acciones especiales 1 y 2
         vista.btnEspecial1.setOnAction(e -> {
             List<String> msgs = controlador.ejecutarAccionEspecial(mascotaActual, 1);
             actualizarPantalla(msgs);
@@ -124,7 +118,16 @@ public class HelloApplication extends Application {
             actualizarPantalla(msgs);
         });
 
-        // Avanzar tiempo (+1h) en todas las mascotas
+        vista.btnEspecial3.setOnAction(e -> {
+            List<String> msgs = controlador.ejecutarAccionEspecial(mascotaActual, 3);
+            actualizarPantalla(msgs);
+        });
+
+        vista.btnEspecial4.setOnAction(e -> {
+            List<String> msgs = controlador.ejecutarAccionEspecial(mascotaActual, 4);
+            actualizarPantalla(msgs);
+        });
+
         vista.btnTiempo.setOnAction(e -> {
             List<String> msgs = controlador.avanzarTiempoTodos();
             actualizarPantalla(msgs);

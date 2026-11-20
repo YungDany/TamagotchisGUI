@@ -74,18 +74,24 @@ private int nivelChill;
 
     @Override
     public String accion1() {
+        setNivelChill(nivelChill+ 5);
         return (nombre+"Esta viendo el paisaje(Nivel: "+nivelChill+").");
     }
 
     @Override
     public String accion2() {
+        setNivelSociable(nivelSociable+ 5);
+
         return (nombre+"Esta arriba de un cocodrilo!!(Nivel: "+nivelSociable+").");
     }
     public String accion3() {
+        setNivelSociable(nivelSociable+ 8);
+
         return (nombre+"Esta acostado a tu lado(Nivel: "+nivelSociable+").");
     }
 
     public String accion4() {
+        setNivelChill(nivelChill+ 5);
         return (nombre+"Esta descansando en el rio(Nivel: "+nivelChill+").");
     }
 

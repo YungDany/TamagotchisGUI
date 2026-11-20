@@ -74,18 +74,25 @@ package Modelo;
 
         @Override
         public String accion1() {
+            setNivelCaprichosa(nivelCaprichosa+ 8);
+
             return (nombre+" Esta aburrida(Nivel: "+nivelCaprichosa+").");
         }
 
         @Override
         public String accion2() {
+            setNivelCoqueta(nivelCoqueta+ 5);
             return (nombre+" Esta feliz(Nivel: "+nivelCoqueta+").");
         }
+
         public String accion3() {
+            setNivelCaprichosa(nivelCaprichosa+ 8);
             return (nombre+" Esta llorando(Nivel: "+nivelCaprichosa+").");
         }
 
         public String accion4() {
+            setNivelCoqueta(nivelCoqueta+ 5);
+
             return (nombre+" Le encanto su cambio de ropa(Nivel: "+nivelCoqueta+").");
         }
 

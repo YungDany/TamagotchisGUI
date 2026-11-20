@@ -81,19 +81,25 @@ public class Gato extends Tamagotchi{
 
     @Override
     public String accion1() {
+        setNivelPereza(nivelPereza+ 5);
+
         return nombre + " se lame la pata con mucha calma(Nivel: " + nivelPereza + ").";
 
     }
 
     @Override
     public String accion2() {
+
         return nombre + " Esta maullando con fuerza(Nivel: " + nivelIrritabilidad + ").";
     }
     public String accion3() {
         ronroneando = true;
+        setNivelPereza(nivelPereza+ 5);
         return nombre +" Esta ronroneando(Nivel: "+nivelPereza+").";
     }
     public String accion4() {
+        setNivelIrritabilidad(nivelIrritabilidad+ 5);
+
         return nombre+ " Esta sacudiendo su cola con fuerza(Nivel: "+nivelIrritabilidad+").";
     }
 

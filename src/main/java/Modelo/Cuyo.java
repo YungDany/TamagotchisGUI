@@ -72,18 +72,25 @@ private int nivelChillido;
     }
     @Override
     public String accion1() {
+        setNivelMiedo(nivelMiedo+ 5);
         return (nombre+"Se quedo Congelado(Nivel: "+nivelMiedo+").");
 
     }
 
     @Override
     public String accion2() {
+        setNivelChillido(nivelChillido+ 5);
+
         return (nombre+"cuy cuy(Nivel: "+nivelChillido+").");
     }
     public String accion3() {
+        setNivelChillido(nivelChillido+ 5);
+
         return (nombre+"esta roendo la madera(Nivel: "+nivelChillido+").");
     }
     public String accion4() {
+        setNivelMiedo(nivelMiedo+ 5);
+
         return (nombre+"le asusto el ruido de la puerta(Nivel: "+nivelMiedo+").");
     }
 
