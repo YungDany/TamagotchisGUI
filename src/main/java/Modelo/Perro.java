@@ -59,7 +59,7 @@ public class Perro extends Tamagotchi{
             setEnergia(limitarRango(energia - juego.getGastoEnergetico()));
             setHambre(limitarRango(hambre + 10));
             setNivelImperactividad(nivelImperactividad + 3);
-            IO.println(nombre + " jugo" + juego.getNombre());
+            System.out.println(nombre + " jugo" + juego.getNombre());
         }
 
         @Override
