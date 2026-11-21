@@ -95,7 +95,7 @@ package Modelo;
 
             return (nombre+" Le encanto su cambio de ropa(Nivel: "+nivelCoqueta+").");
         }
-
+//
 
         public void setNivelCoqueta(int nivelCoqueta) {
             this.nivelCoqueta = limitarRango(nivelCoqueta);
